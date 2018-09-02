@@ -1,0 +1,39 @@
+{
+  "name": "eslint-vvdev-rn",
+  "version": "1.0.0",
+  "description": "eslint settings for react-native developers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "babel-preset-airbnb": "^2.4.0",
+    "babel-tape-runner": "^2.0.1",
+    "editorconfig-tools": "^0.1.1",
+    "eslint": "^4.9.0",
+    "eslint-find-rules": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "in-publish": "^2.0.0",
+    "react": ">= 0.13.0",
+    "safe-publish-latest": "^1.1.1",
+    "tape": "^4.8.0"
+  },
+  "peerDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/volga-volga/eslint-vvdev-rn"
+  },
+  "bugs": {
+    "url": "https://github.com/volga-volga/eslint-vvdev-rn/issues"
+  },
+  "homepage": "https://github.com/volga-volga/eslint-vvdev-rn#readme",
+  "author": "Nikita Sirotkin",
+  "license": "ISC"
+}

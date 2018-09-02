@@ -1,7 +1,7 @@
 {
-  "name": "eslint-vvdev-rn",
+  "name": "eslint-config-vvdev-rn",
   "version": "1.0.0",
-  "description": "eslint settings for react-native developers",
+  "description": "eslint config for react-native developers",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,12 +28,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/volga-volga/eslint-vvdev-rn"
+    "url": "https://github.com/volga-volga/eslint-config-vvdev-rn"
   },
   "bugs": {
-    "url": "https://github.com/volga-volga/eslint-vvdev-rn/issues"
+    "url": "https://github.com/volga-volga/eslint-config-vvdev-rn/issues"
   },
-  "homepage": "https://github.com/volga-volga/eslint-vvdev-rn#readme",
+  "homepage": "https://github.com/volga-volga/eslint-config-vvdev-rn#readme",
   "author": "Nikita Sirotkin",
   "license": "ISC"
 }

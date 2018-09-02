@@ -1,10 +1,8 @@
-const restrictedGlobals = require('eslint-restricted-globals');
-
 module.exports = {
   rules: {
     'no-delete-var': 'error',
     'no-label-var': 'error',
-    'no-restricted-globals': ['error', 'isFinite', 'isNaN'].concat(restrictedGlobals),
+    'no-restricted-globals': ['error', 'isFinite', 'isNaN'],
     'no-shadow': 'error',
     'no-shadow-restricted-names': 'error',
     'no-undef': 'error',

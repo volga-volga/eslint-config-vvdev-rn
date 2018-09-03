@@ -23,6 +23,13 @@ module.exports = {
   rules: {
     strict: 'error',
   },
-  globals: { fetch: false, __DEV__: false, btoa: false, alert: false, window: false, document: false },
-  env: { es6: true },
+  globals: {
+    fetch: false,
+    __DEV__: false,
+    btoa: false,
+    alert: false,
+    window: false,
+    document: false,
+  },
+  env: {es6: true},
 };

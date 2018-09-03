@@ -1,7 +1,6 @@
 module.exports = {
   rules: {
-    // TODO: Метод класса должен использовать this
-    'class-methods-use-this': ['error', { exceptMethods: [] }],
+    'class-methods-use-this': ['off', { exceptMethods: [] }],
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
     'consistent-return': 'error',

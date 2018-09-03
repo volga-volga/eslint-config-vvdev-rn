@@ -3,7 +3,6 @@ module.exports = {
     node: true,
   },
   rules: {
-    // TODO: Запрет require
     'global-require': 'error',
     'no-buffer-constructor': 'error',
     'no-new-require': 'error',

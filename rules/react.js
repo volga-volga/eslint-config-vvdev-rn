@@ -6,15 +6,10 @@ module.exports = {
     },
   },
   rules: {
-    // TODO: Prevent multiple component definition per file
     'react/no-multi-comp': ['error', { ignoreStateless: true }],
-    // TODO: Enforce a defaultProps definition for every prop that is not a required prop
-    'react/require-default-props': 'off',
-    // TODO: only .jsx files may have JSX
-    'react/jsx-filename-extension': ['error', { extensions: ['.jsx'] }],
-    // TODO: Enforce spacing around jsx equals signs
-    'react/jsx-equals-spacing': ['error', 'always'],
-    // TODO:Enforce component methods order
+    'react/require-default-props': 'error',
+    'react/jsx-filename-extension': ['off', { extensions: ['.jsx'] }],
+    'react/jsx-equals-spacing': ['error', 'never'],
     'react/sort-comp': [
       'error', {
         order: [
@@ -28,7 +23,6 @@ module.exports = {
         ],
       },
     ],
-    // TODO: Enforce props alphabetical sorting
     'react/jsx-sort-props': [
       'error', {
         ignoreCase: true,
@@ -36,12 +30,11 @@ module.exports = {
         shorthandFirst: false,
         shorthandLast: false,
         noSortAlphabetically: false,
-        reservedFirst: true,
+        reservedFirst: false,
       },
     ],
-    // TODO: Enforce event handler naming conventions in JSX
     'react/jsx-handler-names': [
-      'error', {
+      'off', {
         eventHandlerPrefix: 'handle',
         eventHandlerPropPrefix: 'on',
       },

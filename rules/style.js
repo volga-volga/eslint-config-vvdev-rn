@@ -189,10 +189,7 @@ module.exports = {
         before: false,
       },
     ],
-
-    // TODO: Требовать camelCase имена
     camelcase: ['error', { properties: 'never' }],
-    // TODO: Одинарные ковычки в jsx (<div className='sfasf' />)
     'jsx-quotes': ['error', 'prefer-single'],
     'key-spacing': [
       'error', {
@@ -211,7 +208,6 @@ module.exports = {
         },
       },
     ],
-    // TODO: Число строк в файле
     'max-lines': [
       'off', {
         max: 800,
@@ -219,10 +215,7 @@ module.exports = {
         skipComments: true,
       },
     ],
-    // TODO: else if
-    'no-lonely-if': 'error',
-
-    // TODO: не смешивать операции
+    'no-lonely-if': 'off',
     'no-mixed-operators': [
       'error', {
         groups: [
@@ -235,35 +228,15 @@ module.exports = {
         allowSamePrecedence: false,
       },
     ],
-    // TODO: Запрет множества пустых строк
-    'no-multiple-empty-lines': [
-      'error', {
-        max: 1,
-        maxEOF: 1,
-      },
-    ],
-    // TODO: Странное правило про шаблонизаторы
-    'template-tag-spacing': ['error', 'never'],
-
-    // TODO: что-то про unicode
+    'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 1 }],
+    'template-tag-spacing': ['off', 'never'],
     'unicode-bom': ['error', 'never'],
-
-    // TODO: Запрещены битовые операции
     'no-bitwise': 'error',
-
-    // TODO: Запрещено continue
-    'no-continue': 'error',
-
-    // TODO: Сомнительное правило которое ни на что не влияет (отключено)
+    'no-continue': 'off',
     'func-name-matching': ['off', 'always', { includeCommonJSModuleExports: false }],
     'lines-around-comment': 'off',
-
-    // TODO: Сомнительное правило (отключено) - foo = function() {} или function foo(){}
     'func-style': ['off', 'expression'],
-
-    // TODO: Непонятное отключенное правило
     'id-blacklist': 'off',
-
     'function-paren-newline': ['error', 'multiline'],
     'id-length': 'off',
     'id-match': 'off',

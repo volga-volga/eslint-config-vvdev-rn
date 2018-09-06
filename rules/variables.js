@@ -6,7 +6,7 @@ module.exports = {
     'no-shadow': 'error',
     'no-shadow-restricted-names': 'error',
     'no-undef': 'error',
-    'no-undefined': 'error',
+    'no-undefined': 'off',
     'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
     'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
     'no-undef-init': 'off',

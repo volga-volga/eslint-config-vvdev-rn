@@ -30,6 +30,9 @@ module.exports = {
     alert: false,
     window: false,
     document: false,
+    TimeoutID: false,
+    IntervalID: false,
+    FormData: false,
   },
   env: {es6: true},
 };

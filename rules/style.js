@@ -84,7 +84,7 @@ module.exports = {
     'no-nested-ternary': 'error',
     'no-new-object': 'error',
     'no-restricted-syntax': [
-      'error',
+      'off',
       {
         selector: 'ForInStatement',
         message: 'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
@@ -133,7 +133,7 @@ module.exports = {
     'one-var': ['error', 'never'],
     'one-var-declaration-per-line': ['error', 'initializations'],
     'operator-assignment': ['error', 'always'],
-    'operator-linebreak': ['error', 'after'],
+    'operator-linebreak': ['error', 'before'],
     'padded-blocks': [
       'error', {
         blocks: 'never',

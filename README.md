@@ -5,9 +5,6 @@
 ### Install eslint:
 
     yarn add --D eslint
-or    
-    
-    npm i --save-dev eslint
 
 ### Add scripts in package.json
 
@@ -21,40 +18,21 @@ where `${SOURCES}` is root of linted code
 {
   "extends": "vvdev-rn"
 }
-
 ```
-
-### Install modules as devDependencies.
-
-via `yarn`:
-
-    yarn add --D eslint-config-vvdev-rn
-    yarn add --D eslint-plugin-import
-    yarn add --D eslint-plugin-jsx-a11y
-    yarn add --D eslint-plugin-react
-    yarn add --D babel-eslint
-
-or `npm`:
-
-    npm i --save-dev eslint-config-vvdev-rn
-    npm i --save-dev eslint-plugin-import
-    npm i --save-dev eslint-plugin-jsx-a11y
-    npm i --save-dev eslint-plugin-react
-    npm i --save-dev babel-eslint
 
 ## Usage
 
 Use one of the next commands
 
-    npm run lint
     yarn run lint
 
 ## Auto check before commit
-Install `husky` as devDependencies:
 
-    yarn add --D husky
-    npm i --save-dev husky
-    
-Add script in `package.json`:
+See [husky](https://www.npmjs.com/package/husky)    
 
-    "precommit": "npm run lint"
+## TODO:
+
+- [] global constants
+- [] [flow](https://github.com/gajus/eslint-plugin-flowtype) plugin 
+- [] [sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs) plugin 
+- [] react-native plugin

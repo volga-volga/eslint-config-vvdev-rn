@@ -6,7 +6,7 @@ module.exports = {
     },
   },
   rules: {
-    'react/no-multi-comp': ['error', { ignoreStateless: true }],
+    'react/no-multi-comp': ['off', { ignoreStateless: true }],
     'react/require-default-props': 'error',
     'react/jsx-filename-extension': ['off', { extensions: ['.jsx'] }],
     'react/jsx-equals-spacing': ['error', 'never'],
@@ -49,8 +49,8 @@ module.exports = {
     'react/jsx-max-props-per-line': ['error', { maximum: 1, when: 'always' }],
     'react/jsx-no-bind': [
       'error', {
-        ignoreRefs: true,
-        allowArrowFunctions: true,
+        ignoreRefs: false,
+        allowArrowFunctions: false,
         allowBind: false,
       },
     ],
@@ -80,7 +80,7 @@ module.exports = {
     ],
     'react/jsx-first-prop-new-line': ['error', 'multiline-multiprop'],
     'react/jsx-indent': ['error', 2],
-    'react/jsx-no-target-blank': 'error',
+    'react/jsx-no-target-blank': 'off',
     'react/jsx-no-comment-textnodes': 'error',
     'react/no-render-return-value': 'error',
     'react/no-find-dom-node': 'error',

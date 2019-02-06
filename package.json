@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vvdev-rn",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "eslint config for react-native developers",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,8 @@
   "peerDependencies": {
     "eslint": "^4.9.0",
     "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react-native": "^3.6.0",
+    "eslint-plugin-react-native-globals": "^0.1.2",
     "eslint-plugin-react": "^7.4.0"
   },
   "repository": {

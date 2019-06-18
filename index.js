@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['react', 'react-native', 'react-native-globals'],
+  plugins: ['react', 'react-native', 'react-native-globals', '@typescript-eslint'],
   extends: [
     './rules/best-practices',
     './rules/errors',
@@ -10,9 +10,8 @@ module.exports = {
     './rules/strict',
     './rules/style',
     './rules/variables',
-    // 'plugin:react-native/all',
   ].map(require.resolve),
-  parser: 'babel-eslint',
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2017,
     sourceType: 'module',
@@ -22,6 +21,11 @@ module.exports = {
   },
   rules: {
     'react-native/sort-styles': 'off',
+    'newline-per-chained-call': 'off',
+    'react-native/no-raw-text': 'error',
+    'react-native/no-color-literals': 'error',
+    'react-native/no-inline-styles': 'warn',
+    'react-native/no-unused-styles': 'warn',
   },
   env: {es6: true},
   globals: {

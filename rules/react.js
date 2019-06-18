@@ -7,18 +7,12 @@ module.exports = {
   },
   rules: {
     'react/no-multi-comp': ['off', { ignoreStateless: true }],
-    'react/require-default-props': 'error',
+    'react/require-default-props': 'off',
     'react/jsx-filename-extension': ['off', { extensions: ['.jsx'] }],
     'react/jsx-equals-spacing': ['error', 'never'],
     'react/sort-comp': [
-      'error', {
+      'off', {
         order: [
-          'statics',
-          'instance-variables',
-          'lifecycle',
-          '/^on.+$/',
-          'everything-else',
-          '/^render.+$/',
           'render',
         ],
       },
@@ -39,16 +33,15 @@ module.exports = {
         eventHandlerPropPrefix: 'on',
       },
     ],
-    'react/forbid-prop-types': ['error', { forbid: ['any', 'array', 'object'] }],
-    'react/jsx-boolean-value': ['error', 'never', { always: [] }],
+    'react/jsx-boolean-value': ['off', 'never', { always: [] }],
     'react/jsx-closing-bracket-location': ['error', 'line-aligned'],
-    'react/jsx-closing-tag-location': 'error',
+    'react/jsx-closing-tag-location': 'off',
     'react/jsx-curly-spacing': ['error', 'never', { allowMultiline: true }],
     'react/jsx-indent-props': ['error', 2],
     'react/jsx-key': 'error',
     'react/jsx-max-props-per-line': ['error', { maximum: 1, when: 'always' }],
     'react/jsx-no-bind': [
-      'error', {
+      'off', {
         ignoreRefs: false,
         allowArrowFunctions: false,
         allowBind: false,

@@ -24,7 +24,7 @@ module.exports = {
     'no-new-symbol': 'error',
     'no-this-before-super': 'error',
     'no-useless-computed-key': 'error',
-    'no-useless-constructor': 'error',
+    'no-useless-constructor': 'off',
     'no-useless-rename': [
       'error', {
         ignoreDestructuring: false,
@@ -37,7 +37,7 @@ module.exports = {
     'prefer-arrow-callback': ['error', { allowNamedFunctions: false, allowUnboundThis: true }],
     'prefer-const': ['error', { destructuring: 'any', ignoreReadBeforeAssign: true }],
     'prefer-destructuring': [
-      'error', {
+      'off', {
         VariableDeclarator: {
           array: false,
           object: true,
@@ -50,13 +50,12 @@ module.exports = {
         enforceForRenamedProperties: false,
       },
     ],
-    'prefer-numeric-literals': 'error',
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
-    'prefer-template': 'error',
+    'prefer-template': 'off',
     'require-yield': 'error',
     'rest-spread-spacing': ['error', 'never'],
-    'symbol-description': 'error',
+    'symbol-description': 'off',
     'template-curly-spacing': 'error',
     'yield-star-spacing': ['error', 'after'],
   },

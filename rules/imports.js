@@ -57,6 +57,8 @@ module.exports = {
       'error', 'always', {
         js: 'never',
         jsx: 'never',
+        tsx: 'never',
+        ts: 'never',
       },
     ],
     'import/order': [

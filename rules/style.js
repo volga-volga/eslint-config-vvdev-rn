@@ -59,7 +59,7 @@ module.exports = {
       },
     ],
     'max-len': [
-      'error', 120, 2, {
+      'off', 120, 2, {
         ignoreUrls: true,
         ignoreComments: true,
         ignoreRegExpLiterals: true,
@@ -189,7 +189,7 @@ module.exports = {
         before: false,
       },
     ],
-    camelcase: ['error', { properties: 'never' }],
+    camelcase: ['off', { properties: 'never' }],
     'jsx-quotes': ['error', 'prefer-single'],
     'key-spacing': [
       'error', {

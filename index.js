@@ -22,9 +22,9 @@ module.exports = {
   rules: {
     'react-native/sort-styles': 'off',
     'newline-per-chained-call': 'off',
-    'react-native/no-raw-text': 'error',
-    'react-native/no-color-literals': 'error',
-    'react-native/no-inline-styles': 'warn',
+    'react-native/no-raw-text': 'warn',
+    'react-native/no-color-literals': 'warn',
+    'react-native/no-inline-styles': 'off',
     'react-native/no-unused-styles': 'warn',
   },
   env: {es6: true},

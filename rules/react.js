@@ -6,17 +6,12 @@ module.exports = {
     },
   },
   rules: {
+    'react-hooks/exhaustive-deps': 'error',
     'react/no-multi-comp': ['off', { ignoreStateless: true }],
     'react/require-default-props': 'off',
     'react/jsx-filename-extension': ['off', { extensions: ['.jsx'] }],
     'react/jsx-equals-spacing': ['error', 'never'],
-    'react/sort-comp': [
-      'off', {
-        order: [
-          'render',
-        ],
-      },
-    ],
+    'react/sort-comp': 'off',
     'react/jsx-sort-props': [
       'error', {
         ignoreCase: true,

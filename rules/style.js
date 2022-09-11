@@ -51,7 +51,7 @@ module.exports = {
     ],
 
     'linebreak-style': ['error', 'unix'],
-    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: false }],
+    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
     'lines-around-directive': [
       'error', {
         before: 'always',
@@ -216,18 +216,7 @@ module.exports = {
       },
     ],
     'no-lonely-if': 'off',
-    'no-mixed-operators': [
-      'error', {
-        groups: [
-          ['+', '-', '*', '/', '%', '**'],
-          ['&', '|', '^', '~', '<<', '>>', '>>>'],
-          ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
-          ['&&', '||'],
-          ['in', 'instanceof'],
-        ],
-        allowSamePrecedence: false,
-      },
-    ],
+    'no-mixed-operators': 'off',
     'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 1 }],
     'template-tag-spacing': ['off', 'never'],
     'unicode-bom': ['error', 'never'],

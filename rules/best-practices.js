@@ -9,7 +9,7 @@ module.exports = {
     'dot-notation': ['error', { allowKeywords: true }],
     'dot-location': ['error', 'property'],
     eqeqeq: ['error', 'always', { null: 'ignore' }],
-    'guard-for-in': 'error',
+    'guard-for-in': 'off',
     'no-alert': 'warn',
     'no-else-return': ['off', { allowElseIf: true }],
     'no-empty-function': [
@@ -100,13 +100,7 @@ module.exports = {
     'no-self-compare': 'error',
     'no-sequences': 'error',
     'no-throw-literal': 'error',
-    'no-unused-expressions': [
-      'error', {
-        allowShortCircuit: false,
-        allowTernary: false,
-        allowTaggedTemplates: false,
-      },
-    ],
+    'no-unused-expressions': 'off',
     'no-useless-concat': 'error',
     'no-useless-escape': 'error',
     'no-useless-return': 'error',

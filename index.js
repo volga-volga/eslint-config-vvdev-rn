@@ -1,16 +1,18 @@
 module.exports = {
-  plugins: ['react', 'react-native', 'react-native-globals', '@typescript-eslint'],
-  extends: [
+  plugins: ['react', 'react-native', 'react-native-globals', '@typescript-eslint','react-hooks'],
+  extends: ['plugin:react-hooks/recommended', ...[
     './rules/best-practices',
     './rules/errors',
     './rules/es6',
     './rules/imports',
     './rules/node',
     './rules/react',
-    './rules/strict',
+    './rules/react-native',
     './rules/style',
+    './rules/strict',
+    './rules/typescript',
     './rules/variables',
-  ].map(require.resolve),
+  ].map(require.resolve)],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2017,
@@ -19,13 +21,16 @@ module.exports = {
       experimentalObjectRestSpread: true,
     },
   },
-  rules: {
-    'react-native/sort-styles': 'off',
-    'newline-per-chained-call': 'off',
-    'react-native/no-raw-text': 'warn',
-    'react-native/no-color-literals': 'warn',
-    'react-native/no-inline-styles': 'off',
-    'react-native/no-unused-styles': 'warn',
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: [
+          '.js',
+          '.tsx',
+          '.ts',
+        ],
+      },
+    },
   },
   env: {es6: true},
   globals: {
@@ -48,5 +53,7 @@ module.exports = {
     alert: false,
     window: false,
     document: false,
+    XMLHttpRequest: false,
+    WebSocket: false,
   },
 };

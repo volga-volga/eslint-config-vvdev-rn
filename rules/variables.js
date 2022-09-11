@@ -7,7 +7,7 @@ module.exports = {
     'no-shadow-restricted-names': 'error',
     'no-undef': 'error',
     'no-undefined': 'off',
-    'no-unused-vars': ['off', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
+    'no-unused-vars': 'off',// used rule from typescript
     'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
     'no-undef-init': 'off',
     'init-declarations': 'off',
